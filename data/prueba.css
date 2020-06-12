@@ -1,0 +1,694 @@
+
+
+@keyframes any{
+    0% {opacity: 0.1}
+    50% {opacity: 0.5}
+    100% {opacity: 1}
+}
+
+.namy{
+
+    /*
+    animation-name: any;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    color: white;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+
+
+    color: #ffffff;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    background-color: #1d88dc;
+    border-color: #1d88dc;
+
+
+
+    */
+
+    background-color: #1f87dc;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #1f87dc;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+
+    /*
+    color: #131724;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    background-color: #fff;
+    border-color: #fff;
+
+    */
+}
+
+p.titAngel{
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: "HelveticaNeue", Arial;
+}
+
+b.nAngel{
+    color: #fff;
+    background-color: #1f87dc;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #1f87dc;
+}
+
+.loop_marcas{
+   position: relative;
+   overflow: hidden;
+   /*background-color: blue;*/
+}
+.contenedor_Sec_Marcas_01{
+   /*position: absolute; */
+   height: 100%;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   display: inline-flex;
+   z-index: 5;
+}
+.contenedor_Sec_Marcas_02{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   display: inline-flex;
+   z-index: 7;
+}
+.hover_img{
+   color: #fff;
+}
+.contenedorSec2{
+    /* margin: auto; */
+    /* position: absolute; */
+    /* right: 0; */
+    /* width: 100vw; */
+    width: 100%;
+    height: 100%;
+    /* left: 0; */
+    /* text-align: center; */
+    display: inline-flex;
+}
+
+.contenedor_Sec_Marcas_01 div{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    /* top: 0; */
+    /* bottom: 0; */
+    /* height: 100%; */
+    color: #fff;
+    text-align: center;
+}
+.contenedor_Sec_Marcas_01 img{
+   /*
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
+
+   height: 160px;*/
+   text-align: center;
+   position: absolute;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+}
+
+.contenedor_Sec_Marcas_02 div{
+
+   background-color: white;
+   display: flex;
+   width: 25%;
+   height: 100%;
+   /* top: 0; */
+   /* bottom: 0; */
+   /* height: 100%; */
+   color: #fff;
+   text-align: center;
+}
+.contenedor_Sec_Marcas_02 img{
+   /*
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
+
+   height: 160px;*/
+   text-align: center;
+   position: absolute;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+}
+
+.img_div_Marcas_01{
+   justify-content: center;
+   margin: 0 auto;
+   height: 100%;
+   overflow: hidden;
+}
+.subImg{
+    border-radius: 30%;
+    height: 130px;
+    width: 130px;
+}
+
+.img_div_Marcas_02{
+   justify-content: center;
+   margin: 0 auto;
+   height: 100%;
+   overflow: hidden;
+}
+.subImg_02{
+    /*border-radius: 30%;*/
+    /*height: 160px;*/
+    width: 190px;
+}
+
+
+
+.img_loop_1:hover .hover_img_loop_1{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+.img_loop_2:hover .hover_img_loop_2{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+.img_loop_3:hover .hover_img_loop_3{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+.img_loop_4:hover .hover_img_loop_4{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+
+.contenedorSec2 span{
+   z-index: -1;
+   /* height: 10px; */
+   /*background-color: blue;*/
+   width: 15vw;
+   margin: auto;
+   margin-left: 5vw;
+   display: inline-block;
+   text-align: center;
+   position: absolute;
+}
+
+
+/*
+   Slider Marcas
+*/
+.slider_marcas{
+   width: 100%;
+   height: 150px;
+   display: grid;
+   margin: auto;
+   overflow: hidden;
+}
+.slider_marcas ul{
+   display: flex;
+   padding: 0;
+   width: 400%;
+   overflow: hidden;
+
+   /*
+   animation: cambio 6s infinite;
+   animation-direction: alternate;
+   animation-timing-function: ease-in-out;
+	*/
+
+}
+.slider_marcas li{
+   /*width: 8.25%;*/
+   width: 33vw;
+   list-style: none;
+   display: flex;
+   overflow: hidden;
+}
+.slider_marcas li:hover{
+   /*width: 8.25%;*/
+   width: 33vw;
+   list-style: none;
+   display: flex;
+   background-color: white;
+}
+
+.slider_marcas img{
+   width: 120px;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+   overflow: hidden;
+}
+.img_redonda{
+   border-radius: 6px;
+}
+
+@keyframes cambio{
+   0% {margin-left: 0;}
+   45% {margin-left: 0;}
+
+   55% {margin-left: -100%;}
+   100% {margin-left: -100%;}
+}
+
+
+.slider_marcas ul{
+   display: flex;
+   padding: 0;
+   width: 400%;
+   overflow: hidden;
+
+   animation: cambio 6s infinite;
+   animation-direction: alternate;
+   animation-timing-function: ease-in-out;
+
+
+}
+.slider_marcas li{
+   /*width: 8.25%;*/
+   width: 33vw;
+   list-style: none;
+   display: flex;
+   overflow: hidden;
+}
+.slider_marcas li:hover{
+   /*width: 8.25%;*/
+   width: 33vw;
+   list-style: none;
+   display: flex;
+   background-color: white;
+}
+
+.slider_marcas img{
+   width: 120px;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+   overflow: hidden;
+}
+.img_redonda{
+   border-radius: 6px;
+}
+
+.hover_img{
+   position: absolute;
+   overflow: hidden;
+   background-color: transparent;
+   margin-left: 9vw;
+   color: transparent;
+}
+.img_loop_1:hover .hover_img_loop_1{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 17vh;
+   margin-left: 9vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+
+
+/*
+   Tamaño logos marcas
+*/
+.logo_cmt{
+   width: 115px !important;
+}
+.logo_upt{
+   width: 170px !important;
+}
+.logo_ipsei{
+   width: 145px !important;
+}
+.logo_mb{
+   width: 190px !important;
+}
+.logo_nikan{
+   width: 175px !important;
+}
+.logo_egal{
+   width: 175px !important;
+}
+
+
+
+@keyframes bye{
+    0% {opacity: 1}
+    50% {opacity: 0.5}
+    100% {opacity: 0}
+}
+
+.firmaCover{
+    position: relative;
+    z-index: 50;
+    visibility: visible;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+/*
+    animation-name: bye;
+    animation-duration: 0.6s;
+    animation-delay: 1.6s;
+    animation-iteration-count: 1;
+*/
+
+}
+
+.primero{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: #131724;
+}
+
+.imagen_firma{
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    /* display: inline-block; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* vertical-align: middle; */
+    /*height: 200px;*/
+}
+
+.div_cambia{
+    width: 100vw;
+    margin: auto;
+    height: 80px;
+    position: relative;
+}
+
+.divSec3{
+    /*margin: auto;*/
+    height: 40px;
+    position: relative;
+}
+
+.cambiaSec3{
+    /*position: absolute;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    */
+    margin: auto;
+    text-align: center;
+
+
+
+    position: absolute;
+    height: 30px;
+    width: 88%;
+    /* display: flex; */
+    font-size: 1.9em;
+    color: #131724;
+}
+
+.cambia{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100vw;
+    /* display: flex; */
+
+    font-size: 1.9em;
+    color: #fff;
+}
+
+#tepetla{
+    z-index: 1;
+}
+
+#inactivo_1{
+    z-index: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /**/
+      /**/
+      /* TAMAÑO MOVIL */
+      /**/
+      @media screen and (max-width: 969px){
+
+         .namy{
+            background-color: #1f87dc;
+            border-width: 5px 5px 5px 5px;
+            border-style: solid;
+            border-color: #1f87dc;
+            color: #fff;
+            font-size: 7.5vw;
+            font-weight: 300;
+         }
+
+
+
+      p.titAngel{
+         font-size: 9vw;
+         font-weight: lighter;
+         font-family: "HelveticaNeue", Arial;
+      }
+
+      b.nAngel{
+         color: #fff;
+         background-color: #1f87dc;
+         border-style: solid;
+         border-width: 5px;
+         border-color: #1f87dc;
+      }
+
+      .slider_marcas ul{
+         display: flex;
+         padding: 0;
+         width: 400%;
+         overflow: hidden;
+
+         animation: cambio 6s infinite;
+         animation-direction: alternate;
+         animation-timing-function: ease-in-out;
+
+
+      }
+      .slider_marcas li{
+         /*width: 8.25%;*/
+         width: 33vw;
+         list-style: none;
+         display: flex;
+         overflow: hidden;
+      }
+      .slider_marcas li:hover{
+         /*width: 8.25%;*/
+         width: 33vw;
+         list-style: none;
+         display: flex;
+         background-color: white;
+      }
+
+      .slider_marcas img{
+         width: 20vw;
+         margin: auto;
+         top: 0;
+         bottom: 0;
+         overflow: hidden;
+      }
+      .img_redonda{
+         border-radius: 6px;
+      }
+
+      .hover_img{
+         position: absolute;
+         overflow: hidden;
+         background-color: transparent;
+         margin-left: 9vw;
+         color: transparent;
+      }
+      .img_loop_1:hover .hover_img_loop_1{
+         transition-duration: 0.4s;
+
+         visibility: visible;
+         width: 15.1vw;
+
+         margin-top: 17vh;
+         margin-left: 9vw;
+         font-size: 1.1em;
+         background-color: black;
+         color: #fff;
+         text-align: center;
+         border-radius: 6px;
+         padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+         z-index: 100;
+      }
+
+
+
+      /*
+         Tamaño logos marcas
+      */
+      .logo_cmt{
+         width: 25vw !important;
+      }
+      .logo_ipsei{
+         width: 25vw !important;
+      }
+      .logo_upt{
+         width: 27vw !important;
+      }
+      .logo_nikan{
+         width: 26vw !important;
+      }
+      .logo_mb{
+         width: 29vw !important;
+      }
+      .logo_egal{
+         width: 29vw !important;
+      }
+
+
+
+      @keyframes bye{
+          0% {opacity: 1}
+          50% {opacity: 0.5}
+          100% {opacity: 0}
+      }
+
+      .firmaCover{
+          position: relative;
+          z-index: 50;
+          visibility: visible;
+          background-color: #fff;
+          width: 100%;
+          height: 100vh;
+      /*
+          animation-name: bye;
+          animation-duration: 0.6s;
+          animation-delay: 1.6s;
+          animation-iteration-count: 1;
+      */
+
+      }
+
+      .primero{
+          height: 100vh;
+          width: 100%;
+          position: absolute;
+          background-color: #131724;
+      }
+
+      .imagen_firma{
+          width: 300px;
+          margin: auto;
+          position: absolute;
+          /* display: inline-block; */
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          /* vertical-align: middle; */
+          /*height: 200px;*/
+      }
+
+      span#Soy_Footer{
+         font-weight: bold;
+         background-color: #1d87dc;
+         padding: 0px 2x;
+      }
+
+
+   }
+
+
+
+
+
+
+
