@@ -76,6 +76,10 @@ function firma(inicio, fin, paso, caso)
 //setInterval(firma, 5);
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 var Texto_Footer_Dec;
 var Texto_Footer;
 var Palabra_Footer;
@@ -84,69 +88,6 @@ var Texto_Top_Dec;
 var Texto_Top;
 var Palabra_Top;
 
-
-function Cambia_Palabra_Top( palabra_in )
-{
-
-    var caracteres = palabra_in.split('');
-    var inc = 0;  // checar si se usa en otra funcion
-
-    var letra_actual = caracteres[0];
-    var indice_caracter = 1;
-
-    Palabra_Top = palabra_in;
-
-    //Color(30);
-    var incremento_top = setInterval(function incremento()
-    {
-        //console.log(inc + "inc");
-
-        inc = inc + 0.2;
-
-        if( indice_caracter >= palabra_in.length )
-        {
-            clearInterval(incremento_top);
-            clearInterval(Texto_Top);
-            Texto_Top_Dec = setTimeout(Texto_Decremento_Top, 2000);
-        }
-
-        //Top_Texto_Mi_Nombre.style.opacity = inc;
-        /////Top_Texto_Soy_Frase.innerHTML = letra_actual;
-        //console.log(indice_caracter);
-        letra_actual = letra_actual + caracteres[indice_caracter];
-        indice_caracter++;
-    }, 100);
-
-    //Top_Texto_Mi_Nombre.style.opacity = 0.1;
-    //Top_Texto_Mi_Nombre.innerHTML = tipo[conta];
-    ////console.log('conta' + conta);
-}
-
-
-function Texto_Decremento_Top()
-{
-    var indice_decremento = 1;
-
-    var decremento_top = setInterval(function decremento()
-    {
-
-        if( indice_decremento >= Palabra_Top.length )
-        {
-            clearInterval(Texto_Top_Dec);
-            clearInterval(decremento_top);
-
-            //console.log("out decremento2");
-            Texto_Top = setInterval(Call_Texto_Top, 3000);
-        }
-
-        var string_decremento = Palabra_Top;
-        string_decremento = string_decremento.substring(0, string_decremento.length - indice_decremento);
-        //console.log(string_decremento);
-
-        //////Top_Texto_Soy_Frase.innerHTML = string_decremento;
-        indice_decremento++;
-    }, 100);
-}
 
 
 
@@ -188,6 +129,7 @@ var Tipos_Footer = ["mecatrónicos", "programadores", "ingenieros", "empresarios
 var Indice_Cadena = 0;
 
 
+
 function Call_Texto_Footer()
 {
     Cambia_Palabra_Footer( Tipos_Footer[Indice_Cadena] );
@@ -207,23 +149,23 @@ function onVisibilityChange(e)
         //clearInterval(Firma_Footer);
         clearInterval(Texto_Footer_Dec);
         clearInterval(Texto_Top_Dec);
+        ///clearInterval(Texto_Top);
         //clearInterval(loopa);
-        console.log("hidden");
+        //console.log("hidden");
     }
     else
     {
+        ///Texto_Top = setInterval(Call_Texto_Top, 3000);
+        //Texto_Top = setInterval(Call_Texto_Top, 3000);
         Texto_Footer = setInterval(Call_Texto_Footer, 3000);
     }
 
 }
 
 
-
-
-
-
-
-
+$(document).ready( function iniciar(){
+   console.log("inicio!");
+} );
 
 
 
@@ -262,50 +204,3 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-
-  anime.timeline({loop: true})
-  .add({
-    targets: '.ml8 .circle-white',
-    scale: [0, 3],
-    opacity: [1, 0],
-    easing: "easeInOutExpo",
-    rotateZ: 360,
-    duration: 1100
-  }).add({
-    targets: '.ml8 .circle-container',
-    scale: [0, 1],
-    duration: 1100,
-    easing: "easeInOutExpo",
-    offset: '-=1000'
-  }).add({
-    targets: '.ml8 .circle-dark',
-    scale: [0, 1],
-    duration: 1100,
-    easing: "easeOutExpo",
-    offset: '-=600'
-  }).add({
-    targets: '.ml8 .letters-left',
-    scale: [0, 1],
-    duration: 1200,
-    offset: '-=550'
-  }).add({
-    targets: '.ml8 .bang',
-    scale: [0, 1],
-    rotateZ: [45, 15],
-    duration: 1200,
-    offset: '-=1000'
-  }).add({
-    targets: '.ml8',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1400
-  });
-
-anime({
-  targets: '.ml8 .circle-dark-dashed',
-  rotateZ: 360,
-  duration: 8000,
-  easing: "linear",
-  loop: true
-});

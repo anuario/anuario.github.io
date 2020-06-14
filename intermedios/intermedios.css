@@ -4,6 +4,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 
+.fb-like{
+}
+span.fwb
+{
+	color: #fff !important;
+}
+a.confirmButton
+{
+	color: #ff2266 !important;
+}
+
+div.fwb
+{
+	color: red !important;
+	background-color: #fff !important;
+	border-radius: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
+div.fwb a
+{
+	color: green !important;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -170,7 +196,39 @@ div.caja:hover > p.mensaje_flex
 }
 
 
+.namy_R
+{
+    background-color: #ea2e49;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #ea2e49;
+    color: #fff;
 
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy_G
+{
+    background-color: #05ce6c;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #05ce6c;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy_B
+{
+    background-color: #2868ef;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #2868ef;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
 
 
 
@@ -876,7 +934,14 @@ div.iconos_holder
 	font-size: calc(18px + 2 * ((100vw - 480px) / 2080));
 	line-height: calc(25px + 6 * ((100vw - 480px) / 2080));
 }
-
+div.fb-botones
+{
+	    width: 100%;
+    display: inline-block;
+    /* margin: auto; */
+    text-align: center;
+    margin-bottom: 5%;
+}
 
 div#fin
 {
@@ -907,6 +972,97 @@ ul.lista_despedida li:hover
 	list-style: disc;
 	margin-bottom: 10px;
 }
+.latido
+{
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(0.66, -0.02, 0.44, 1.21);
+	color: #ea2e49;
+}
+
+.writer_img
+{
+	width: 160px !important;
+}
+.texto_momentos
+{
+	min-height: calc( ((20vw * 0.8342) + 0.1469px) - 25px);
+	background-color: #fff;
+	padding: 20px 0 0px 10.3% !important;
+	margin: 0 !important;
+}
+.h2_min
+{
+}
+.namy_R
+{
+    background-color: #ea2e49;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #ea2e49;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy_G
+{
+    background-color: #05ce6c;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #05ce6c;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy_B
+{
+    background-color: #0091ea;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #0091ea;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy_M
+{
+    background-color: #8e24aa;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #8e24aa;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy_Na
+{
+    background-color: #f57f17;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: #f57f17;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+.namy
+{
+    font-size: 40px;
+    font-weight: 300;
+    background-color: transparent !important;
+    border-width: 0 !important;
+    border-style: solid;
+    border-color: transparent !important;
+    color: #282b30;
+}
+
+
+
+
 
 
 
@@ -918,11 +1074,6 @@ ul.lista_despedida li:hover
 .anim path {
   stroke-width: 2;
 }
-
-
-
-
-
 h1.ml8 {
   font-weight: 900;
   font-size: calc(28px + 33 * ((100vw - 480px) / 2080));
@@ -930,7 +1081,6 @@ h1.ml8 {
   width: 3em;
   height: 3em;
 }
-
 .ml8 .letters-container {
   position: relative;
   left: 0;
@@ -940,7 +1090,6 @@ h1.ml8 {
   bottom: 0;
   height: 1em;
 }
-
 .ml8 .letters {
   position: relative;
   z-index: 2;
@@ -949,13 +1098,11 @@ h1.ml8 {
   right: -0.12em;
   top: -0.2em;
 }
-
 .ml8 .bang {
   font-size: 1.4em;
   top: auto;
   left: -0.06em;
 }
-
 .ml8 .circle {
   position: absolute;
   left: 0;
@@ -964,14 +1111,12 @@ h1.ml8 {
   top: 0;
   bottom: 0;
 }
-
 .ml8 .circle-white {
   width: 3em;
   height: 3em;
   border: 2px dashed white;
   border-radius: 2em;
 }
-
 .ml8 .circle-dark {
   width: 2.2em;
   height: 2.2em;
@@ -979,7 +1124,6 @@ h1.ml8 {
   border-radius: 3em;
   z-index: 1;
 }
-
 .ml8 .circle-dark-dashed {
   border-radius: 2.4em;
   background-color: transparent;
@@ -1119,11 +1263,11 @@ h1.ml8 {
 	.texto_mensaje
 	{
 		color: #fff;
-		margin-right: 6%;
-		margin-left: 3%;
+		margin-right: 4%;
+		margin-left: 4%;
 
-		font-size: calc(18px + 2 * ((100vw - 480px) / 2080));
-		line-height: calc(25px + 6 * ((100vw - 480px) / 2080));
+		font-size: calc(16px + 2 * ((100vw - 480px) / 2080));
+		line-height: calc(19px + 6 * ((100vw - 480px) / 2080));
 
 		position: relative;
 	   margin-top: 0;
@@ -1131,13 +1275,22 @@ h1.ml8 {
 	}
 	.tm_top
 	{
-	   margin-top: 65vw;
+	   margin-top: 68vw;
 	}
 	.img_holder
 	{
 		width: 100vw;
 		position: absolute;
    	top: 0;
+   	min-width: 100vw !important;
+	}
+	.div-texto
+	{
+		width: auto;
+	   height: auto;
+	   position: relative;
+	   background-color: #243e95;
+	   box-shadow: 0px 0px 50px 50px #243e95;
 	}
 	.contenedor
 	{
@@ -1156,6 +1309,91 @@ h1.ml8 {
 		height: 50px;
 		line-height: 50px;
 		font-size: 30px;
+	}
+	.texto_momentos
+	{
+		min-height: calc( ((75vw * 0.8342) + 0.1469px) - 25px);
+		background-color: #fff;
+		padding: 20px 0 0px 4% !important;
+		margin: 0 !important;
+	}
+	.rosw
+	{
+	   width: 100%;
+	   position: relative;
+	   /* margin: 10px 0 10px 0; */
+	   text-align: left;
+	   background-color: #fff;
+	   padding: 10px 0 10px 4% !important;
+	}
+	.h2_min
+	{
+		font-size: calc(24px + 2 * ((100vw - 480px) / 2080));
+	}
+	.namy_R
+	{
+	    background-color: #ea2e49;
+	    border-width: 0px 5px 0px 5px;
+	    border-style: solid;
+	    border-color: #ea2e49;
+	    color: #fff;
+
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+	.namy_G
+	{
+	    background-color: #05ce6c;
+	    border-width: 0px 5px 0px 5px;
+	    border-style: solid;
+	    border-color: #05ce6c;
+	    color: #fff;
+
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+	.namy_B
+	{
+	    background-color: #0091ea;
+	    border-width: 0px 5px 0px 5px;
+	    border-style: solid;
+	    border-color: #0091ea;
+	    color: #fff;
+
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+	.namy_M
+	{
+	    background-color: #8e24aa;
+	    border-width: 0px 5px 0px 5px;
+	    border-style: solid;
+	    border-color: #8e24aa;
+	    color: #fff;
+
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+	.namy_Na
+	{
+	    background-color: #f57f17;
+	    border-width: 0px 5px 0px 5px;
+	    border-style: solid;
+	    border-color: #f57f17;
+	    color: #fff;
+
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+	.namy
+	{
+	    font-size: 30px;
+	    font-weight: 300;
+	    background-color: transparent !important;
+	    border-width: 0 !important;
+	    border-style: solid;
+	    border-color: transparent !important;
+	    color: #282b30;
 	}
 }
 
@@ -1189,7 +1427,7 @@ h1.ml8 {
 {
 	.tm_top
 	{
-	   margin-top: 90vw;
+	   margin-top: 78vw;
 	}
 }
 
