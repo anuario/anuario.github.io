@@ -21,6 +21,7 @@
 
 	<link rel="stylesheet" href="./data/estilos_19.css">
 	<link rel="stylesheet" href="./data/font-awesome.min.css">
+	<link rel="stylesheet" href="./intermedios/animate.css">
 
     <script type="text/javascript" defer="" src="./data/prudeba.js"></script>
     <link rel="stylesheet" href="./data/prueba.css">
@@ -41,13 +42,20 @@
 	
 	<link rel="stylesheet" href="./dist2/default-skin/default-skin.css">
 	<link rel="stylesheet" href="./dist2/photoswipe.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src='./intermedios/core.js'></script>
 
 </head>
 
 
 
 
-<body class="" style="">
+<body class="" style="" id="cuerpo">
+
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0" nonce="oWghAygC"></script>
 
 
 
@@ -62,11 +70,17 @@
 				    <label class="tm fa fa-bars menu-button" for="menu-bar" ></label>
 					<nav class="menu">
 						<ul class="navy navbar-navy">
-				        	<li class=""><a href="https://github.com/AngelTepetla" target="_blank">Repositorio</a></li>
-				        	<li class="active" id="li_activa"><a href="##"  class="active">Inicio</a></li>
-					        <li><a href="https://github.com/AngelTepetla">Proyectos</a></li>
-					        <li class="submenu"><a class="sub" href="##">Más</a>
-				          </li>
+				        	<li class=""><a href="https://anuario.github.io" target="">Inicio</a></li>
+				        	<li class="active" id="li_activa"><a href="##"  class="active">Perfiles</a></li>
+					      	<li><a href="##">Generación</a></li>
+					      	<li class="submenu"><a class="sub" href="##">Más</a>
+					      		<ul class="no-pad">
+					             <li><a href="##">Mensajes de docentes</a></li>
+					             <li><a href="##">Justificación</a></li>
+					             <li class="dropdown-marca hom">2020 © Ángel Tepetla</li>
+					             <li><a href="http://www.facebook.com/AngelTepetla" target="_blank">Contacto</a></li>
+					            </ul>
+				         	</li>
 				          </ul>
 					</nav>
 				</div>
@@ -102,6 +116,7 @@
 			<a href="https://www.facebook.com/sharer/sharer.php?u=angeltepetla.github.io" target="_blank">
   Share on Facebook
 </a>  -->
+			<div class="div-texto">
 			<p class="texto_mensaje tm_top">Definitivamente una de las mejores etapas de mi vida, pude estudiar en ambos turnos, viví muy divertidos momentos y conocí a varios amigos. 
 			<br><br>
 			Siempre he apostado por vivir en equilibrio, por ello hice cosas buenas y malas (un poco más de las primeras) que la mayoria en algún momento seran graciosos recuerdos para contar... 
@@ -113,20 +128,29 @@
 			A los ingenieros que me formaron y motivaron, ¡Muchas gracias!
 			<br>
 			</p>
-
+			</div>
 			<!--
 			<ul class="lista_despedida">
 				<li>Para aquellos casos especiales que definitivamente no creeyeron en mi, ¡Muchas gracias +1!</li>
 				<li>Para aquellos que aparte de formarme, me motivaron y creeyeron en mi, ¡Muchas gracias +1000!</li>
 			</ul>
 			-->
-			<p class="texto_mensaje" style="margin-bottom: 15%">¡Siempre un #LeonBlancoUPTlax! <img src="./intermedios/icono.png" style= "width:22px; height:22px;" alt="Heart ATepetla" class="animated pulse rt3s2"> </p>
+			<p class="texto_mensaje" style="margin-bottom: 5%">¡Siempre un #LeonBlancoUPTlax! <img src="./intermedios/icono.png" style= "width:22px; height:22px;" alt="Heart ATepetla" class="animated pulse rt3s2"> </p>
+
+			<div class="fb-botones">
+				<div class="fb-like fwb" data-href="https://anuario.github.io/at2.html" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
+
+				<div class="fb-share-button" data-href="https://anuario.github.io/at2.html" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+			</div>
+			
 
 			<!--
 			<p class="texto_mensaje">Mejores momentos: Las actividades despues de una visita industrial... jaja</p>
 			<p class="texto_mensaje">Docente favorito: Palomino</p>
 			<p class="texto_mensaje">Actividades favoritas: Rally del Megafest, Semana de las Ingenierias</p>
 			-->
+
+			<!--
 			<p class="texto_mensaje"> ¿Que mas deberia ir aqui????: ...</p>
 			<p class="texto_mensaje"> ¿Algun otra seccion????: ...</p>
 			<p class="texto_mensaje">?Secciones o datos graciosos, pero no indecentes??</p>
@@ -137,29 +161,126 @@
 			<p class="texto_mensaje">Mejores momentos: ...</p>
 			<p class="texto_mensaje">Docente favorito: ...</p>
 			<p class="texto_mensaje">Actividades favoritas: ...</p>
-
+-->
 			
 		</section>
 	</section>
 
+<!--
+	<section class="contenedor" id="cont1">
+		<section class="nombre_holder" id="holder1">
+			<div class="caja_holder">
+				<p class="grupo_holder">Grupo A</p>
+				<p class="titulo_holder">Ángel Tepetla</p>
+				<p class="texto_holder">Ingeniería Mecatrónica</p>
 
 
+			</div>
+
+		</section>
+
+		<section class="texto" id="text1">
+			<div class="div-texto">
+			<p class="texto_mensaje tm_top">Definitivamente una de las mejores etapas de mi vida, pude estudiar en ambos turnos, viví muy divertidos momentos y conocí a varios amigos. 
+			</p>
+			</div>
+
+			<p class="texto_mensaje">Actividades favoritas: ...</p>
+		</section>
+	</section>
+-->
+
+	<div class="row texto_momentos">
+		<h2 class="animated fadeIn" id="titulo_fade">Soy</h2>
+	</div>
+
+<script type='text/javascript'>
+    const typewriter = new Typewriter('#titulo_fade', {
+      loop: true,
+      delay: 40,
+      deleteSpeed: 20
+    });
+
+   typewriter
 
 
+   	.typeString('<h2 class="h2_min">Actividades favoritas:</h2>')
+   	.typeString('<br>')
+		.pauseFor(1000)
+    	.typeString('<span class="spann namy_Na">EL Megafest.</span>')
+      .pauseFor(2500)
+      .deleteChars(12)
+      .pauseFor(1000)
+      .typeString('<span class="spann namy">La Semana de las Ingenierias.')
+      .pauseFor(2500)
+      .deleteAll(19)
+
+    //.typeString('<img src="./intermedios/imges/4.jpg" class="writer_img" alt="">')
+    	//.pauseFor(25200)
+    	//.deleteAll(19)
+
+
+      .typeString('<h2 class="h2_min">Mejores momentos:</h2>')
+   	.typeString('<br>')
+   	.pauseFor(1000)
+    	.typeString('<span class="spann namy_M">Los #SabadosRandom.')
+		.pauseFor(2500)
+		.deleteChars(19)
+		.pauseFor(1000)
+    	.typeString('<span class="spann namy">Una fiesta en')
+    	.deleteChars(9)
+    	.typeString('<span class="spann namy">visita industrial en Tehuacan.')
+    	.pauseFor(2500)
+    	.deleteChars(34)
+    	.pauseFor(1000)
+    	.typeString('<span class="spann namy">El Megafest 2019.')
+    	.pauseFor(2500)
+    	.deleteAll(19)
+
+    	.typeString('<h2 class="h2_min">No salió tan bien, jajaja...</h2>')
+   	.typeString('<br>')
+   	.pauseFor(1000)
+    	.typeString('<span class="spann namy_R">Nuestro arbol navideño de mecatrónica 2017.')
+		.pauseFor(2500)
+    	.deleteAll(19)
+
+    	.typeString('<h2 class="h2_min">Mis proyectos favoritos:</h2>')
+   	.typeString('<br>')
+   	.pauseFor(1000)
+    	.typeString('<span class="spann namy">Mezclador de pintura basado en </span><span class="spann namy_R">R</span><span class="spann namy_G">G</span><span class="spann namy_B">B</span>')
+		.pauseFor(2500)
+		.deleteChars(34)
+		.pauseFor(1000)
+    	.typeString('<span class="spann namy_M">Dynamic Time Warping</span><span class="spann namy"> con EMG.')
+    	.pauseFor(2500)
+    	.deleteChars(29)
+    	.pauseFor(1000)
+    	.typeString('<span class="spann namy">Puentes con palitos de madera.')
+    	.pauseFor(2500)
+    	.deleteAll(19)
+
+    	.pauseFor(1000)
+    	.typeString('<h2 class="h2_min">Mis materias favoritas:</h2>')
+   	.typeString('<br>')
+   	.pauseFor(1000)
+    	.typeString('<span class="spann namy">Automatización, programación y electronica.')
+    	.pauseFor(2500)
+    	.deleteAll(19)
+      
+      //.typeString('<strong>altered!<strong>')
+
+      .start();
+  </script>
 
 
 
 	<div class="rosw ">
-		<h1 class="ml6">
-  			<span class="text-wrapper">
-    			<span class="letters">Galeria</span>
-  			</span>
-		</h1>
+		<h2 class="h2_min">
+			Galeria
+		</h2>
 	</div>
 
 	   <div id="demo-test-gallery" class="demo-gallery flexbin flexbin-margin white">
-
-	   	
 
 	        	<a href="./intermedios/imges/8.jpg" data-size="1600x1067" data-med="./intermedios/imges/8.jpg" data-med-size="1024x683" data-author="Ángel, Ángel T, Julio y Antonio">
 	          <img src="./intermedios/imges/8.jpg" alt="" />
@@ -178,12 +299,11 @@
 	          <figure>Convivencia #LM, 2018.</figure>
 	        </a>
 
-
-
 	      </div>
 	      <!-- <figure class="demo-gallery__title">Demo gallery &middot; 5 photos</figure> -->
 
-
+	<!-- Your share button code -->
+  
 
 
 
@@ -213,6 +333,7 @@
 				   </div> <!-- end .col-sm-4 -->
 
 				   <div class="iconos">
+
 				   	<div class="social-icons">
 							<a href="##" class="icono_social i_insta" target=""><i class="fa fa-instagram"></i></a>
 							<a href="https://www.facebook.com/sharer/sharer.php?u=uptlax.edu.mx" class="icono_social i_face" target=""><i class="fa fa-facebook"></i></a>
@@ -255,7 +376,7 @@
 		   <div class="bottom animated fadeIn rt2sss" >&copy; 2016 - 2020 &middot; multiBit <span class="hover_marca">Una marca de Ángel Tepetla</span> </div> <!- end .bottom -> --> 
 		   <!--
 		   <div class="bottom animated fadeIn rt2sss" style="font-weight: 100;">Hecho con <span class="fa fa-heart"></span>, Ángel Tepetla <span class="hover_marca"> &copy mB 2020</span> </div> -->
-		   <div class="bottom animated fadeIn rt2sss" style="font-weight: 100;">#LeonesBlancos <span class="fa fa-heart"></span> UPTlax <span class="hover_marca"> &copy mB 2020</span> </div>
+		   <div class="bottom" style="font-weight: 100;">#LeonesBlancos <span class="fa fa-heart animated pulse latido"></span> UPTlax <span class="hover_marca"> &copy Ángel Tepetla - 2020.</span> </div>
 
 		</footer> <!-- end .footer -->
 	</div>  <!--  SECTION -->
